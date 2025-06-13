@@ -181,11 +181,6 @@ Para actualizar los datos:
 4. Push a branch: `git push origin feature/nueva-funcionalidad`
 5. Crear Pull Request
 
-## 📞 **Soporte y Contacto**
-
-**Equipo SURA Investments - Technology**
-- **Email**: investments.tech@sura.cl
-- **Interno**: Portal Colaboradores SURA
 
 ## 📜 **Licencia**
 
