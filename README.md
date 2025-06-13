@@ -193,27 +193,3 @@ Para actualizar los datos:
 
 Este software es propiedad de SURA Investments y está destinado únicamente para uso interno de la organización.
 
----
-
-## 🎯 **Roadmap Futuro**
-
-### **V2.0 - Próximas Funcionalidades:**
-- [ ] **API REST** para integración con otros sistemas
-- [ ] **Alertas automáticas** por email/Slack
-- [ ] **Comparación con benchmarks** (índices de mercado)
-- [ ] **Dashboard ejecutivo** con KPIs principales
-- [ ] **Exportación a PDF** de reportes
-- [ ] **Autenticación** y perfiles de usuario
-- [ ] **Base de datos** para datos históricos
-- [ ] **Caching inteligente** para mejor performance
-
-### **V3.0 - Visión a Largo Plazo:**
-- [ ] **Machine Learning** para predicciones
-- [ ] **Análisis de riesgo** avanzado (VaR, Sharpe)
-- [ ] **Integración Bloomberg API** en tiempo real
-- [ ] **Mobile App** nativa
-- [ ] **Reportes automáticos** personalizables
-
----
-
-**¿Preguntas o sugerencias?** ¡Nos encanta el feedback! 💡
