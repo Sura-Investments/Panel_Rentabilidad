@@ -11,6 +11,7 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Modal de información
 modal = dbc.Modal([
@@ -333,10 +334,10 @@ app.layout = html.Div([
 def cargar_datos_optimizado():
     try:
         posibles_rutas = [
-            './data/rentabilidades.xlsx',
-            'data/rentabilidades.xlsx',
-            '../data/rentabilidades.xlsx',
-            'C:/Users/gcampos05/OneDrive - SURA INVESTMENTS/Documentos/Modelos/Panel Rentabilidades PY/presentacion/data/rentabilidades.xlsx'
+            'data/rentabilidades.xlsx',          # Para deployment
+            './data/rentabilidades.xlsx',       # Local relativa
+            '../data/rentabilidades.xlsx',      # Backup
+            'rentabilidades.xlsx'                # Si está en raíz
         ]
         
         ruta_archivo = None
@@ -1045,6 +1046,9 @@ def sincronizar_grafico_modal(figure):
         height=750
     )
     return fig_vacio
-
+    
 if __name__ == '__main__':
-   app.run(debug=True)
+    import os
+    port = int(os.environ.get('PORT', 8050))
+    debug_mode = os.environ.get('DEBUG', 'False').lower() == 'true'
+    app.run_server(debug=debug_mode, host='0.0.0.0', port=port)
